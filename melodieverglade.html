@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+            background: url("bg.png") no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            max-width: 1000px;
+            width: 95%;
+        }
+
+        .storybook-cover {
+            width: 400px;
+            height: auto;
+            margin-right: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .welcome-text {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.8rem;
+            color: #000137;
+            margin-bottom: 30px;
+        }
+
+        .language-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .language-buttons button {
+            background-color: #47C6FF;
+            border: none;
+            border-radius: 8px;
+            padding: 18px 25px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-buttons button:hover {
+            background-color: #003A63;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .storybook-cover {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 300px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .welcome-text {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            .language-buttons button {
+                font-size: 1.2rem;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="storybook-cover" src="mainpage.jpg" alt="Melodie Everglade Cover">
+        <div class="content">
+            <div class="welcome-text">SELAMAT DATANG KE STORYBOOK KAMI!</div>
+            <p>SILA PILIH BAHASA</p>
+            <div class="language-buttons">
+                <button onclick="location.href='coding/bahasamelayu/bm.html'">BAHASA MELAYU</button>
+                <button onclick="location.href='coding/bahasasungai/bs.html'">BAHASA SUNGAI</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
